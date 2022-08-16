@@ -1,2 +1,9 @@
-# maks-and-validators
-Masks and Validators for many languages (anyone can contribute)
+# FUU - **F**requently **U**sed **U**tilities
+
+- masks
+- validators
+- transforms
+- and more...
+
+**anyone can contribute** \
+**anyone can us**
