@@ -6,4 +6,4 @@
 - and more...
 
 **anyone can contribute** \
-**anyone can us**
+**anyone can use**
