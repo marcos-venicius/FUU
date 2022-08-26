@@ -10,9 +10,9 @@ export function getColorContrast(hexColor) {
   }
 
   if (hexColor.length === 6) {
-    r = parseInt(hexColor.substring(0, 1), 16);
-    g = parseInt(hexColor.substring(2, 3), 16);
-    b = parseInt(hexColor.substring(4, 5), 16);
+    r = parseInt(hexColor.substring(0, 2), 16);
+    g = parseInt(hexColor.substring(2, 4), 16);
+    b = parseInt(hexColor.substring(4, 6), 16);
   } else if (hexColor.length === 3) {
     const _r = hexColor[0];
     const _g = hexColor[1];
