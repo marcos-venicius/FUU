@@ -3,7 +3,7 @@
  * @param {("1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"|"10"|"11"|"12")} month month number
  * @returns {String}
  */
-export function getMonth(month: string): string | undefined {
+export function getMonth(month: string) {
   return {
     1: 'Jan',
     2: 'Fev',
@@ -20,8 +20,6 @@ export function getMonth(month: string): string | undefined {
   }[Number(month)]
 }
 
-export type Day = '1' | '2' | '3' | '4' | '5' | '6' | '7'
-export type Week = 'Dom' | 'Seg' | 'Ter' | 'Qua' | 'Qui' | 'Sex' | 'Sáb'
 /**
  *
  * @param day day of week
