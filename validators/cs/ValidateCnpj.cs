@@ -44,6 +44,9 @@ public class ValidateCnpj
             verifyingDigitOne = 11 - resultOneSum % 11;
         }
 
+        if (verifyingDigits[0] != verifyingDigitOne)
+            return false;
+
         cnpjWithoutLastTwoDigits.Add(verifyingDigitOne);
 
         for (var i = 0; i < testTwo.Length; i++)
@@ -64,6 +67,6 @@ public class ValidateCnpj
             verifyingDigitTwo = 11 - resultTwoSum % 11;
         }
 
-        return verifyingDigitOne == verifyingDigits[0] && verifyingDigitTwo == verifyingDigits[1];
+        return verifyingDigitTwo == verifyingDigits[1];
     }
 }
