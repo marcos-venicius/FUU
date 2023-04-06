@@ -9,7 +9,7 @@
   - [get first name](./features/js/get-first-name.js)
   - [invert color](./features/js/invertColor.js)
 - TS
-  - [cache](./features/ts/cache.ts)
+  - [cache](./features/ts/cache)
   - [join generic elements](./features/ts/join-generic-elements.ts)
   
 ### Masks
