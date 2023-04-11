@@ -9,6 +9,7 @@
   - [get first name](./features/js/get-first-name.js)
   - [invert color](./features/js/invertColor.js)
 - TS
+  - [file picker](./features/ts/file-picker.ts)
   - [cache](./features/ts/cache)
   - [join generic elements](./features/ts/join-generic-elements.ts)
   
