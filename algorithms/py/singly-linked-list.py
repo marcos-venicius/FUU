@@ -12,11 +12,17 @@ class LinkedList:
     """
     def __init__(self):
         self.head: Node | None = None
+        self.len = 0
+
+    def __len__(self) -> int:
+        return self.len
 
     def insert_end(self, val: int) -> None:
         """
         Insert a new node at the end of the linked list
         """
+        self.len += 1
+
         node = Node(val)
 
         if self.head is None:
@@ -34,6 +40,8 @@ class LinkedList:
         """
         Insert a new node at the front of the linked list
         """
+        self.len += 1
+
         node = Node(val)
 
         if self.head is None:
@@ -92,6 +100,7 @@ class LinkedList:
 
         if self.head.val == val:
             self.head = self.head.next
+            self.len -= 1
             return True
 
         previous, current = None, self.head
@@ -99,6 +108,7 @@ class LinkedList:
         while current is not None:
             if current.val == val:
                 previous.next = current.next
+                self.len -= 1
                 return True
 
             previous = current
@@ -119,3 +129,4 @@ class LinkedList:
             current = current.next
         
         return ' -> '.join(nodes)
+
