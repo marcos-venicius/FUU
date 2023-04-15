@@ -36,7 +36,7 @@
 - JS
   - [bytes to readable string](./transforms/js/bytes-to-redable-string.js)
 - TS
-  - [color name to hex](./transforms/js/color-name-to-hex.ts)
+  - [color name to hex](./transforms/ts/color-name-to-hex.ts)
   
 ### Validators
 
