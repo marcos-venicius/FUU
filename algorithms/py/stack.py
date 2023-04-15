@@ -1,3 +1,11 @@
+class Node:
+    """
+    A single node of a linked list
+    """
+    def __init__(self, val: int):
+        self.val: int = val
+        self.next: Node | None = None
+
 class Stack:
     """
     Stack: LIFO (Last in First out)
