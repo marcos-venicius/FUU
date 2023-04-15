@@ -12,40 +12,45 @@ class LinkedList:
     """
     def __init__(self):
         self.head: Node | None = None
-        self.len = 0
+        self.tail: Node | None = None
+        self.length = 0
 
     def __len__(self) -> int:
-        return self.len
+        """
+        time complexity: O(1)
+        """
+        return self.length
 
     def insert_end(self, val: int) -> None:
         """
+        time complexity: O(1)
+
         Insert a new node at the end of the linked list
         """
-        self.len += 1
+        self.length += 1
 
         node = Node(val)
 
         if self.head is None:
             self.head = node
-            return
-
-        current = self.head
-
-        while current.next is not None:
-            current = current.next
-        
-        current.next = node
+            self.tail = self.head
+        else:
+            self.tail.next = node
+            self.tail = self.tail.next
 
     def insert_front(self, val: int) -> None:
         """
+        time complexity: O(1)
+
         Insert a new node at the front of the linked list
         """
-        self.len += 1
+        self.length += 1
 
         node = Node(val)
 
         if self.head is None:
             self.head = node
+            self.tail = self.head
         else:
             tempHead = self.head;
             self.head = node
@@ -53,6 +58,8 @@ class LinkedList:
 
     def get_nth(self, pos: int) -> int:
         """
+        time complexity: O(n)
+
         Get a node on a specific position
         """
         if self.head is None or pos <= 0:
@@ -71,6 +78,8 @@ class LinkedList:
 
     def has(self, val: int) -> bool:
         """
+        time complexity: O(n)
+
         Check if has a node with a specific value
         """
         if self.head is None:
@@ -88,6 +97,8 @@ class LinkedList:
 
     def remove_by_value(self, val: int) -> bool:
         """
+        time complexity: O(n)
+
         Remove the first value occurency
 
         Returns
@@ -100,7 +111,7 @@ class LinkedList:
 
         if self.head.val == val:
             self.head = self.head.next
-            self.len -= 1
+            self.length -= 1
             return True
 
         previous, current = None, self.head
@@ -108,7 +119,7 @@ class LinkedList:
         while current is not None:
             if current.val == val:
                 previous.next = current.next
-                self.len -= 1
+                self.length -= 1
                 return True
 
             previous = current
