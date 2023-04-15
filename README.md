@@ -13,7 +13,12 @@
   - [accent folding](./features/ts/accent-folding.ts)
   - [cache](./features/ts/cache)
   - [join generic elements](./features/ts/join-generic-elements.ts)
-  
+ 
+### Algorithms
+
+- PY
+  - [Singly Linked List](./algorithms/py/singly-linked-list.py)
+ 
 ### Masks
 
 - JS
