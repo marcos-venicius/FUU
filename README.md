@@ -18,7 +18,7 @@
 
 - PY
   - [Singly Linked List](./algorithms/py/singly-linked-list.py)
-  - [Stack O(1)](.algorithms/py/stack.py)
+  - [Stack O(1)](./algorithms/py/stack.py)
  
 ### Masks
 
