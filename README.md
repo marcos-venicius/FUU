@@ -12,6 +12,7 @@
   - [file picker](./features/ts/file-picker.ts)
   - [accent folding](./features/ts/accent-folding.ts)
   - [cache](./features/ts/cache)
+  - [get years list](./features/ts/get-years-list.ts) _gets a list from specified year until current year_
   - [join generic elements](./features/ts/join-generic-elements.ts)
  
 ### Algorithms
