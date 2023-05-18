@@ -1,3 +1,8 @@
+/**
+ * © Copyright 2023 https://github.com/marcos-venicius
+ *
+ */
+
 import React from 'react'
 
 type Props = {
