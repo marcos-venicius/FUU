@@ -15,6 +15,7 @@
   - [invert color](./features/js/invertColor.js)
 - TS
   - [file picker](./features/ts/file-picker.ts)
+  - [get browser cookies](./features/ts/get-browser-cookies.ts)
   - [accent folding](./features/ts/accent-folding.ts)
   - [cache](./features/ts/cache)
   - [get years list](./features/ts/get-years-list.ts) _gets a list from specified year until current year_
