@@ -22,7 +22,7 @@
   - [join generic elements](./features/ts/join-generic-elements.ts)
   - [darken color](./features/ts/darken-color.ts) _transform a hexadecimal color a little darker_
 - [CS](/features/cs/)
-  - [S3](/features/cs/S3.cs)
+  - [S3](/features/cs/S3.cs) - [docs](/docs/features/cs/S3.md)
  
 ### Algorithms
 
@@ -67,6 +67,11 @@
 
 
 ## Docs
+
+### Features
+
+- [cs](/docs/features/cs)
+  - [s3](/docs/features/cs/S3.md)
 
 ### Hooks
 
