@@ -1,28 +1,18 @@
-using System.Linq;
 using System.Text.RegularExpressions;
 
-public class ValidateCpf
+namespace ApplicationsManager.Api.Application.Common.Validators;
+
+public static class ValidateCpf
 {
-    private readonly string _cpf;
-    
-    public ValidateCpf(string cpf)
+    public static bool IsValid(string cpf)
     {
-        _cpf = cpf;
-    }
-
-    public bool IsValid()
-    {
-        if (string.IsNullOrWhiteSpace(_cpf))
-        {
+        if (string.IsNullOrWhiteSpace(cpf))
             return false;
-        }
 
-        var cpf = new Regex("\\D").Replace(_cpf, "");
+        cpf = new Regex(@"[.\-]").Replace(cpf, "");
 
         if (cpf.Length != 11)
-        {
             return false;
-        }
 
         var verifyingDigits = cpf[^2..].Select(x => int.Parse(x.ToString())).ToList();
         var cpfWithoutLastTwoDigits = cpf[..9].Select(x => int.Parse(x.ToString())).ToList();
@@ -30,16 +20,12 @@ public class ValidateCpf
         var testOne = new[] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
         var testTwo = new[] { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };
 
-        int verifyingDigitOne;
-        int verifyingDigitTwo;
+        int verifyingDigitOne, verifyingDigitTwo;
 
-        var resultOne = new int[testOne.Length];
-        var resultTwo = new int[testTwo.Length];
+        int[] resultOne = new int[testOne.Length], resultTwo = new int[testTwo.Length];
 
-        for (var i = 0; i < testOne.Length; i++)
-        {
+        for (byte i = 0; i < testOne.Length; i++)
             resultOne[i] = cpfWithoutLastTwoDigits[i] * testOne[i];
-        }
 
         var resultOneSum = resultOne.Sum();
 
@@ -50,13 +36,11 @@ public class ValidateCpf
 
         if (verifyingDigits[0] != verifyingDigitOne)
             return false;
-        
+
         cpfWithoutLastTwoDigits.Add(verifyingDigitOne);
 
-        for (var i = 0; i < testTwo.Length; i++)
-        {
+        for (byte i = 0; i < testTwo.Length; i++)
             resultTwo[i] = cpfWithoutLastTwoDigits[i] * testTwo[i];
-        }
 
         var resultTwoSum = resultTwo.Sum();
 
