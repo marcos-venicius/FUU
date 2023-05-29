@@ -59,12 +59,17 @@
 - [CS](/validators/cs)
   - [CNPJ](./validators/cs/ValidateCnpj.cs)
   - [CPF](./validators/cs/ValidateCpf.cs)
-  - [Email](/validators/cs/ValidateEmail.cs)
+  - [Email](/validators/cs/ValidateEmail.cs) - [docs](/docs/cs/validate-email.md)
 
 
 ## Docs
 
-- [hooks](/docs/hooks)
-  - [debounce](/docs/hooks/use-debounce.md)
+### Hooks
 
+- [debounce](/docs/hooks/use-debounce.md)
+
+### Validators
+
+- [cs](/docs/cs)
+  - [Validate Email](/docs/cs/validate-email.md)
 
