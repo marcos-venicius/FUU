@@ -56,9 +56,10 @@
   - [date](./validators/js/date.js)
   - [email](./validators/js/email.js)
   - [hex color](./validators/js/hex-color.js)
-- CS
+- [CS](/validators/cs)
   - [CNPJ](./validators/cs/ValidateCnpj.cs)
   - [CPF](./validators/cs/ValidateCpf.cs)
+  - [Email](/validators/cs/ValidateEmail.cs)
 
 
 ## Docs
