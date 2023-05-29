@@ -21,6 +21,8 @@
   - [get years list](./features/ts/get-years-list.ts) _gets a list from specified year until current year_
   - [join generic elements](./features/ts/join-generic-elements.ts)
   - [darken color](./features/ts/darken-color.ts) _transform a hexadecimal color a little darker_
+- [CS](/features/cs/)
+  - [S3](/features/cs/S3.cs)
  
 ### Algorithms
 
