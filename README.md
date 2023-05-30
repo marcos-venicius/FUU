@@ -30,7 +30,7 @@
   - [Singly Linked List](./algorithms/py/singly-linked-list.py)
   - [Stack O(1)](./algorithms/py/stack.py) - _**implemented with linked list**_
   - [Queue O(1)](./algorithms/py/queue.py) - _**implemented with linked list**_
-  - [Binary search](/algorithms/py/binary-search.py)
+  - [Binary search](/algorithms/py/binary-search.py) - [docs and tests](https://colab.research.google.com/drive/1U5nZ0fZcxSKjigeYM4yy93qUDHtdHOOT?usp=sharing)
 - CS
   - [Sha 256 Hash](/algorithms/cs/Sha256.cs)
  
