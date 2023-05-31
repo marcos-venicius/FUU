@@ -1,5 +1,7 @@
 # Convert between bases
 
+[code implementation](/algorithms/py/convert-between-bases.py)
+
 For example, if you want to convert from binary to decimal: `1010` to decimal, you can use:
 
 ```py
