@@ -1,3 +1,8 @@
+/**
+ * 
+ * @param {string} name 
+ * @returns 
+ */
 export function getFirstName(name) {
   const n = name.split(' ')[0];
 

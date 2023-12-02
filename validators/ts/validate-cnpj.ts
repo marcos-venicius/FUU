@@ -1,4 +1,9 @@
-export function vlaidateCNPJ(cnpj) {
+/**
+ * validate cnpj
+ * @param cnpj cnpj
+ * @returns if is valid or not
+ */
+export function vlaidateCNPJ(cnpj: string) {
   cnpj = cnpj.replace(/[^\d]+/g, "");
 
   if (cnpj === "") return false;

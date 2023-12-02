@@ -1,5 +1,10 @@
-import { validateHexColor } from "../../validators/js/hex-color";
+import { validateHexColor } from "../../validators/js/validate-hex-color";
 
+/**
+ *
+ * @param {string} hex
+ * @returns
+ */
 export function invertColor(hex) {
   hex = hex.replace("#", "");
 

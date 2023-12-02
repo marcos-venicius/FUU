@@ -13,9 +13,8 @@ export function validateCPF(cpf) {
 
   let sumNineFirstNumbers = 0;
 
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < 9; i++)
     sumNineFirstNumbers += Number(nineFirstNumbersMultiplied[i]);
-  }
 
   const c1 = (sumNineFirstNumbers * 10) % 11;
   let n1;
@@ -26,11 +25,7 @@ export function validateCPF(cpf) {
     n1 = String(c1);
   }
 
-  if (n1 !== digitVerify[0]) {
-    return false;
-  }
-
-  // -
+  if (n1 !== digitVerify[0]) return false;
 
   const tenFirstNumbers = cpf.slice(0, 10).split("");
   const tenFirstNumbersMultiplied = tenFirstNumbers.map(
@@ -51,12 +46,9 @@ export function validateCPF(cpf) {
     n2 = String(c2);
   }
 
-  if (n2 !== digitVerify[1]) {
-    return false;
-  }
-  if (cpf === "00000000000") {
-    return false;
-  }
+  if (n2 !== digitVerify[1]) return false;
+
+  if (cpf === "00000000000") return false;
 
   return true;
 }

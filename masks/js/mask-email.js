@@ -1,3 +1,8 @@
+/**
+ *
+ * @param {string} email
+ * @returns
+ */
 export function maskEmail(email) {
   const [firstPart, server] = email.split("@");
 

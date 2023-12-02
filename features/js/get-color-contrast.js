@@ -1,5 +1,10 @@
+/**
+ *
+ * @param {string} hexColor
+ * @returns
+ */
 export function getColorContrast(hexColor) {
-  hexColor = hexColor.replace('#', '');
+  hexColor = hexColor.replace("#", "");
 
   let r = 0;
   let g = 0;
@@ -25,5 +30,5 @@ export function getColorContrast(hexColor) {
 
   const yiq = (r * 299 + g * 587 + b * 114) / 1000;
 
-  return yiq >= 128 ? '#000000' : '#ffffff';
+  return yiq >= 128 ? "#000000" : "#ffffff";
 }
